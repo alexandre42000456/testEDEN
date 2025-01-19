@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1122.807"
+   height="793.82458"
+   viewBox="0 0 1122.807 793.82458"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><path
+     style="fill:#000000;fill-opacity:0"
+     d="M 82.393915,358.98851 V 665.53339 H 273.66316 V 359.39941 Z"
+     id="BU"
+     onclick="alert(&quot;Bibliothèque Universitaire&quot;);" /><image
+     width="1122.807"
+     height="793.82458"
+     preserveAspectRatio="none"
+     xlink:href="../../../../../../../Downloads/Plan_de_la_fac_vierge.png"
+     id="image1"
+     x="-0.15895207"
+     y="-0.85115629" /></svg>
