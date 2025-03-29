@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exemple d'images plein écran</title>
+  <style>
+    /* Conteneur principal qui s'étire sur toute la largeur et utilise une grille */
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Style de chaque "carte" */
+    .card {
+      position: relative;     /* Nécessaire pour superposer le texte */
+      border-radius: 30px;    /* Arrondi des bords */
+      overflow: hidden;       /* Cache ce qui dépasse des bords arrondis */
+      background-color: #f3f3f3;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      /* Hauteur optionnelle si vous voulez uniformiser la taille
+         par exemple : height: 300px; 
+         Dans ce cas, .card img { height: 100%; } */
+    }
+
+    /* L’image remplit entièrement la carte */
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;      /* Adapte l’image sans la déformer */
+      border-radius: 30px;    /* Même arrondi que la carte */
+      display: block;
+    }
+
+    /* Le bloc qui contient le texte superposé en bas de l’image */
+    .overlay {
+      position: absolute;
+      bottom: 0;             
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cards-container">
+    <!-- Carte 1 -->
+    <div class="card">
+      <img src="Capture d’écran 2025-01-18 à 20.41.02.png" alt="Partenariats" />
+      <div class="overlay">Partenariats</div>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="card">
+      <img src="Capture d’écran 2025-01-18 à 20.42.47.png" alt="Soirées" />
+      <div class="overlay">Soirées</div>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="card">
+      <img src="ChatGPT Image 29 mars 2025, 16_47_42.png" alt="Réseau alumni" />
+      <div class="overlay">Réseau alumni</div>
+    </div>
+
+    <div class="card">
+        <img src="ChatGPT Image 29 mars 2025, 16_48_51.png" alt="Réseau alumni" />
+        <div class="overlay">Réseau alumni</div>
+      </div>
+    <!-- Ajoutez autant de cartes que nécessaire -->
+  </div>
+
+</body>
+</html>
